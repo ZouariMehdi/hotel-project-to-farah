@@ -1,0 +1,39 @@
+.button {
+  position: relative;
+  background-color: black;
+  border: 2px solid $secondary-color;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 6px;
+  &::after {
+    content: "";
+    background: black;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+  &:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+  }
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}

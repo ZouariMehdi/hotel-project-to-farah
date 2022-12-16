@@ -1,0 +1,240 @@
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* start landing page*/
+.landing {
+  height: calc(100vh - 60px);
+  overflow: hidden;
+  position: relative;
+}
+.landing:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.716);
+  z-index: 1;
+}
+.landing #backgroundVideo {
+  max-width: 100%;
+  z-index: -1;
+  position: relative;
+}
+.landing .container {
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+.landing .container h4 {
+  font-size: 40px;
+}
+.landing .container h1 {
+  font-size: 180px;
+}
+
+/*end landing page*/
+/*start section one*/
+.sec-1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8decd;
+}
+.sec-1 .row {
+  align-items: center;
+}
+.sec-1 .row .col-6 {
+  flex: 1;
+}
+.sec-1 .row .col-6 .img {
+  width: 400px;
+  height: 500px;
+  background: url("/images/342b3e8e5111c3f39d727608256f0940.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+  overflow: hidden;
+}
+
+/* end section one*/
+/*start section two */
+.sec-2 {
+  background-color: #efece5;
+}
+.sec-2 .container {
+  height: 100vh;
+}
+.sec-2 .container h2 {
+  font-size: 60px;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.sec-2 .container .col-4 .text {
+  margin-top: 20px;
+  border: 2px solid #623d2a;
+  padding: 20px;
+}
+
+/*end section two*/
+/*start section three*/
+.sec-3 {
+  text-align: center;
+  height: 100vh;
+  background-color: #e8decd;
+}
+.sec-3 h2 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 60px;
+}
+.sec-3 .container .row .col-4 .text {
+  border: 2px solid #623d2a;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/*end section three*/
+/*start section fout*/
+.sec-4 {
+  height: 100vh;
+  color: white;
+  background-image: url(/images/back.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.sec-4 h4 {
+  font-size: 60px;
+  position: relative;
+  z-index: 2;
+  left: 40%;
+  padding-top: 60px;
+}
+.sec-4:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hwb(0 0% 100%/0.557);
+  z-index: 1;
+}
+.sec-4 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  z-index: 3;
+}
+.sec-4 .container i {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.sec-4 .container p {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+  font-family: "La Belle Aurore", cursive;
+  font-size: 20px;
+}
+.sec-4 .container p:nth-of-type(2) {
+  font-weight: bold;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
+/*end section four*/
+/*Pricing section */
+.pricing {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efece5;
+  font-size: 20px;
+}
+
+/*end pricing section*/
+/*start forum*/
+.forum {
+  background-color: #e8decd;
+}
+.forum .container h2 {
+  font-size: 60px;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.forum .container .col-4 .text {
+  margin-top: 20px;
+  border: 2px solid #623d2a;
+  padding: 20px;
+}
+
+/*end forum*/
+.button {
+  position: relative;
+  background-color: black;
+  border: 2px solid #efece5;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px 20px;
+  width: 200px;
+  text-align: center; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.button::after {
+  content: "";
+  background: black;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}/*# sourceMappingURL=style.css.map */

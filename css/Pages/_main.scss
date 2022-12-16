@@ -1,0 +1,187 @@
+/* start landing page*/
+.landing {
+  height: calc(100vh - 60px);
+  overflow: hidden;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.716);
+    z-index: 1;
+  }
+  #backgroundVideo {
+    max-width: 100%;
+    z-index: -1;
+    position: relative;
+  }
+  .container {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    h4 {
+      font-size: 40px;
+    }
+    h1 {
+      font-size: 180px;
+    }
+  }
+}
+/*end landing page*/
+/*start section one*/
+.sec-1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-color;
+  .row {
+    align-items: center;
+    .col-6 {
+      flex: 1;
+      .img {
+        width: 400px;
+        height: 500px;
+        background: url("/images/342b3e8e5111c3f39d727608256f0940.jpg");
+        background-size: cover;
+        background-position: center;
+        z-index: 2;
+        overflow: hidden;
+      }
+    }
+  }
+}
+/* end section one*/
+/*start section two */
+.sec-2 {
+  background-color: $secondary-color;
+  .container {
+    height: 100vh;
+    h2 {
+      font-size: 60px;
+      text-align: center;
+      padding-top: 40px;
+      margin-bottom: 40px;
+    }
+    .col-4 {
+      .text {
+        margin-top: 20px;
+        border: 2px solid $dark-brown;
+        padding: 20px;
+      }
+    }
+  }
+}
+/*end section two*/
+/*start section three*/
+.sec-3 {
+  text-align: center;
+  height: 100vh;
+  background-color: $main-color;
+  h2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 60px;
+  }
+  .container {
+    .row {
+      .col-4 {
+        .text {
+          border: 2px solid $dark-brown;
+          margin-top: 20px;
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+
+/*end section three*/
+/*start section fout*/
+.sec-4 {
+  h4 {
+    font-size: 60px;
+    position: relative;
+    z-index: 2;
+    left: 40%;
+    padding-top: 60px;
+  }
+  height: 100vh;
+  color: white;
+  background-color: $primary-color !important;
+  background-image: url(images/back.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    z-index: 3;
+    i {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 20px;
+      font-family: "La Belle Aurore", cursive;
+      font-size: 20px;
+      &:nth-of-type(2) {
+        font-weight: bold;
+        padding-bottom: 20px;
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+}
+/*end section four*/
+/*Pricing section */
+.pricing {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-color;
+  font-size: 20px;
+}
+/*end pricing section*/
+/*start forum*/
+.forum {
+  background-color: $main-color;
+  .container {
+    h2 {
+      font-size: 60px;
+      text-align: center;
+      padding-top: 40px;
+      margin-bottom: 40px;
+    }
+    .col-4 {
+      .text {
+        margin-top: 20px;
+        border: 2px solid $dark-brown;
+        padding: 20px;
+      }
+    }
+  }
+}
+/*end forum*/
