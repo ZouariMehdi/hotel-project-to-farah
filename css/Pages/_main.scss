@@ -19,10 +19,8 @@
     position: relative;
   }
   .container {
-    background-color: red;
-    height: 100vh;
     position: absolute;
-    left: 5%;
+    left: 10%;
     top: 20%;
     font-size: 2rem;
     text-align: center;
@@ -46,12 +44,13 @@
   background-color: $main-color;
   .row {
     align-items: center;
+    gap: 80px;
     .col-6 {
       flex: 1;
       .img {
-        width: 400px;
-        height: 500px;
-        background: url("/images/342b3e8e5111c3f39d727608256f0940.jpg");
+        width: 500px;
+        height: 700px;
+        background-image: url("/images/3.jpg");
         background-size: cover;
         background-position: center;
         z-index: 2;
