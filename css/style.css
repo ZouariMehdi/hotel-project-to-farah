@@ -1,11 +1,3 @@
-* {
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-body {
-  overflow-x: hidden;
-}
-
 /* start landing page*/
 .landing {
   height: calc(100vh - 60px);
@@ -28,6 +20,8 @@ body {
   position: relative;
 }
 .landing .container {
+  background-color: red;
+  height: 100vh;
   position: absolute;
   left: 5%;
   top: 20%;
@@ -130,7 +124,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: hwb(0 0% 100%/0.557);
+  background-color: rgba(0, 0, 0, 0.402);
   z-index: 1;
 }
 .sec-4 .container {
